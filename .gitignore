@@ -1,0 +1,12 @@
+# local env files
+trading_system_env/
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.pyc
+
