@@ -28,3 +28,16 @@ class Trade(models.Model):
 
     class Meta:
         verbose_name = "Trade"
+
+class Qoute(models.Model):
+    author = models.CharField(max_length=50)
+    quote = models.CharField(max_length=500)
+
+    def __str__(self):
+        return self.quote
+
+    def __unicode__(self):
+        return self.quote
+
+    class Meta:
+        verbose_name = "Qoute"

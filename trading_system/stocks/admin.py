@@ -21,5 +21,13 @@ class TradeAdmin(admin.ModelAdmin):
         'quantity'
     )
 
+class QoutesAdmin(admin.ModelAdmin):
+     list_display = (
+        'id',
+        'author',
+        'quote',
+    )
+
 admin.site.register(Stocks, StocksAdmin)
 admin.site.register(Trade, TradeAdmin)
+admin.site.register(Qoute, QoutesAdmin)
